@@ -43,6 +43,16 @@ document.getElementById('redeemButton').addEventListener('click', function() {
                 message = 'Promo code applied! You received 2 Grims!';
                 saveRedeemedStatus(promoCode);
                 break;
+            case 'promolinegass-gfrreeee=7-37824844':
+                grims += 7;
+                message = 'Promo code applied! You received 2 Grims!';
+                saveRedeemedStatus(promoCode);
+                break;
+            case 'promolinegass-gfrreeee=8-371111184844':
+                grims += 8;
+                message = 'Promo code applied! You received 2 Grims!';
+                saveRedeemedStatus(promoCode);
+                break;
             default:
                 message = 'Invalid promo code. Please try again.';
         }
