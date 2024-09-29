@@ -38,8 +38,8 @@ document.getElementById('redeemButton').addEventListener('click', function() {
                 message = 'Promo code applied! You received 2 Grims!';
                 saveRedeemedStatus(promoCode);
                 break;
-            case 'promolinegass-gfrreeee=5-3784844':
-                grims += 2;
+            case 'promolinegass-gfrreeee=6-3784844':
+                grims += 6;
                 message = 'Promo code applied! You received 2 Grims!';
                 saveRedeemedStatus(promoCode);
                 break;
