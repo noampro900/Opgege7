@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grims Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="backgroundMusic" src="https://noampro900.github.io/data5555555555/Brawl%20Stars%20OST.mp3" loop autoplay hidden></audio>
+
+    <h1>Welcome!</h1>
+    <div id="grimsDisplay">Grims: <span id="grims">0</span></div>
+    
+    <div id="shop">
+        <h2>Shop</h2>
+        <img id="item" src="https://noampro900.github.io/data5555555555/%D7%97%D7%A1%D7%A8%20%D7%9B%D7%95%D7%AA%D7%A8%D7%AA149_20240922011550%20(2).png" alt="Item">
+        <p id="purchaseMessage"></p>
+
+        <div id="promoCodeSection">
+            <h3>Enter Promo Code</h3>
+            <input type="text" id="promoCodeInput" placeholder="Enter your promo code">
+            <button id="redeemButton">Redeem Code</button>
+            <p id="promoMessage"></p>
+        </div>
+
+        <img id="freeGrims" src="https://noampro900.github.io/data5555555555/20240922_022343.gif" alt="Get 5 Free Grims" width="200px" height="200px">
+        <p id="freeGrimsMessage"></p>
+
+        <img id="limitedOfferGrims" src="https://noampro900.github.io/data5555555555/20240922_073524.gif" alt="Get 15 Free Grims" width="200px" height="200px">
+        <p id="limitedOfferMessage"></p>
+
+        <img id="oneFreeGrim" src="https://noampro900.github.io/data5555555555/%D7%97%D7%A1%D7%A8%20%D7%9B%D7%95%D7%AA%D7%A8%D7%AA161_20240924125431.png" alt="Get 1 Free Grim" width="200px" height="200px">
+        <p id="oneFreeGrimMessage"></p>
+
+        <img id="limitedPictureOffer" src="https://noampro900.github.io/data5555555555/%D7%97%D7%A1%D7%A8%20%D7%9B%D7%95%D7%AA%D7%A8%D7%AA162_20240924131217.png" alt="Limited Time Picture" width="200px" height="200px" style="display:none;">
+        <p id="limitedPictureMessage"></p>
+    </div>
+    
+    <button id="myCollectionBtn">My Collection</button>
+
+    <button onclick="window.location.href='https://www.paypal.com/ncp/payment/S6KZ6E5EHX3ME';">Buy 45 Grims (2.60 shekel)</button>
+
+    <div id="collection">
+        <h2>Your Collection</h2>
+        <div id="collectionImages"></div>
+        <button id="backToShopBtn">Back to Shop</button>
+    </div>
+
+    <script src="the script"></script>
+</body>
+</html>
