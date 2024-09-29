@@ -53,6 +53,21 @@ document.getElementById('redeemButton').addEventListener('click', function() {
                 message = 'Promo code applied! You received 8 Grims!';
                 saveRedeemedStatus(promoCode);
                 break;
+            case 'promolinegass-gfrreeenoe=100-3711211184844':
+                grims += 100;
+                message = 'Promo code applied! You received 100 Grims! sirrrr!!';
+                saveRedeemedStatus(promoCode);
+                break;
+            case 'promolinegass-gfrrnoeeee=4-3711121184844':
+                grims += 4;
+                message = 'Promo code applied! You received 4 Grims!';
+                saveRedeemedStatus(promoCode);
+                break;
+            case 'promolinegass-gfrrnoeeee=8-371111184844':
+                grims += 1;
+                message = 'Promo code applied! You received 1 Grims!🙃';
+                saveRedeemedStatus(promoCode);
+                break;
             default:
                 message = 'Invalid promo code. Please try again.';
         }
