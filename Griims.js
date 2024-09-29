@@ -40,17 +40,17 @@ document.getElementById('redeemButton').addEventListener('click', function() {
                 break;
             case 'promolinegass-gfrreeee=6-3784844':
                 grims += 6;
-                message = 'Promo code applied! You received 2 Grims!';
+                message = 'Promo code applied! You received 6 Grims!';
                 saveRedeemedStatus(promoCode);
                 break;
             case 'promolinegass-gfrreeee=7-37824844':
                 grims += 7;
-                message = 'Promo code applied! You received 2 Grims!';
+                message = 'Promo code applied! You received 7 Grims!';
                 saveRedeemedStatus(promoCode);
                 break;
             case 'promolinegass-gfrreeee=8-371111184844':
                 grims += 8;
-                message = 'Promo code applied! You received 2 Grims!';
+                message = 'Promo code applied! You received 8 Grims!';
                 saveRedeemedStatus(promoCode);
                 break;
             default:
