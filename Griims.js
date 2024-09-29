@@ -93,6 +93,11 @@ document.getElementById('redeemButton').addEventListener('click', function() {
                 message = 'Promo code applied! You received 5 Grims! sirrr!';
                 saveRedeemedStatus(promoCode);
                 break;
+            case 'talala talal 3':
+                grims += 18;
+                message = 'Promo code applied! You received 5 Grims! sirrr!';
+                saveRedeemedStatus(promoCode);
+                break;
             default:
                 message = 'Invalid promo code. Please try again.';
         }
