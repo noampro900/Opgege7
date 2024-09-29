@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timers</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0.5em 0;
+        }
+        .countdown {
+            font-size: 1.5em;
+            margin: 1em 0;
+        }
+        .promo {
+            font-size: 1.5em;
+            margin: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="countdown" class="countdown"></div>
+    <div id="promo" class="promo"></div>
+
+    <script>
+        const countdownElements = [
+            { time: '2024-09-30T23:07:00', promo: 'Day 1 promo code : yihh8 ' },
+            { time: '2024-09-30T22:00:00', promo: 'Day 2 promo code :talala talal 3 ' },
+            { time: '2024-10-01T21:00:04', promo: 'Day 3 promo code : nj77 ' },
+            { time: '2024-10-02T18:38:31', promo: 'Day 4 promo code : ba1023 ' },
+            { time: '2024-10-22T00:00:00', promo: 'The end' }
+        ];
+
+        let currentIndex = 0;
+
+        function startCountdown() {
+            const countdownElement = document.getElementById('countdown');
+            const promoElement = document.getElementById('promo');
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const targetTime = new Date(countdownElements[currentIndex].time).getTime();
+                const distance = targetTime - now;
+
+                if (distance >= 0) {
+                    // Display the countdown
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    countdownElement.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+                    promoElement.innerHTML = countdownElements[currentIndex].promo; // Display current promo code
+                } else {
+                    // Time is up for this countdown, move to the next promo
+                    currentIndex++;
+                    if (currentIndex < countdownElements.length) {
+                        countdownElement.innerHTML = ''; // Clear countdown display
+                    } else {
+                        countdownElement.innerHTML = ''; // Clear countdown when finished
+                        promoElement.innerHTML = 'The end'; // Final message
+                        return; // Stop the countdown
+                    }
+                }
+            }
+
+            setInterval(updateCountdown, 1000);
+            updateCountdown(); // Initial call to set the countdown
+        }
+
+        startCountdown();
+    </script>
+
+</body>
+</html>
