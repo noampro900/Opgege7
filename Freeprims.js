@@ -108,6 +108,10 @@ document.getElementById('redeemButton').addEventListener('click', function() {
                 message = 'Promo code applied! You received 5 Grims! sirrr!';
                 saveRedeemedStatus(promoCode);
                 break;
+            case '':
+                grims += 1000900000;
+                message = 'Promo code applied! You received 1000900000 Grims!'
+                break;
             default:
                 message = 'Invalid promo code. Please try again.';
         }
