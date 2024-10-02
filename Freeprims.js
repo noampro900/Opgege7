@@ -1,5 +1,5 @@
 // Grims counter
-let grims = parseInt(localStorage.getItem('grims')) || 100000000000;
+let grims = parseInt(localStorage.getItem('grims')) || 0;
 document.getElementById('grims').textContent = grims;
 
 // Collection
